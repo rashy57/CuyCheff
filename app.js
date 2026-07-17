@@ -1,16 +1,12 @@
-const express = require("express");
-const path = require("path");
-
+const express = require('express');
 const app = express();
 
-app.use(express.static(path.join(__dirname, "public")));
+// Esta es la parte más importante para que funcione en Render
+const port = process.env.PORT || 3000;
 
-app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "views", "index.html"));
+// Aquí irían tus otras configuraciones (tus rutas, etc.)
+// ... 
+
+app.listen(port, () => {
+    console.log(`Servidor funcionando en el puerto ${port}`);
 });
-
-const PORT = 3000;
-
-app.listen(PORT, () => {
-    console.log("Servidor iniciado en http://localhost:3000");
-});node app.js
