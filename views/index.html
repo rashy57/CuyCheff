@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ETIQUETAS DE PREVISUALIZACIÓN OFICIALES (OPEN GRAPH) -->
+    <title>CuyChef Abancay | Cuy Premium Envasado al Vacío</title>
+    <meta name="description" content="La mejor carne de cuy tierna, nutritiva y seleccionada envasada al vacío en Apurímac. Listo para cocinar, libre de impurezas y con despacho a domicilio en Abancay, Tamburco y distritos.">
+    
+    <!-- Configuración para WhatsApp, Facebook y Redes Sociales -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CuyChef Abancay | Cuy Premium Envasado al Vacío 🐹">
+    <meta property="og:description" content="Carne de cuy tierna de crianza tecnificada en Apurímac. Presentación impecable lista para la olla, horno o chactado. ¡Haz tu pedido por WhatsApp con delivery local!">
+    <meta property="og:image" content="/img/portada.png">
+    <meta property="og:image:alt" content="CuyChef Premium envasado al vacío">
+
+    <!-- Fuentes y Estilos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN SUPERIOR -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="#inicio" class="logo">
+                <span>🐹</span> CuyChef
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#videos">Nuestra Crianza</a>
+                <a href="#nutricion">Nutrición</a>
+                <a href="#catalogo">Productos</a>
+                <a href="#recetas">Recetas</a>
+                <a href="#carrito-seccion">🛒 Mi Carrito</a>
+                <a href="#faqs">Preguntas</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#carrito-seccion" class="cart-btn">
+                    🛒 Carrito (<span class="cart-count" id="contador-carrito">0</span>)
+                </a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24" fill="currentColor">
+                        <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM416 448H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- PORTADA / HERO -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="badge">Crianza Responsable en Apurímac</span>
+                <h1>Bienvenido a <span class="brand-name">CuyChef</span></h1>
+                <p>La mejor experiencia en cuy envasado al vacío. Fresco, seleccionado y con despacho a todo Abancay y distritos.</p>
+                <a href="#catalogo" class="btn-primary">Comprar Ahora</a>
+            </div>
+            <div class="hero-image">
+                <img src="/img/portada.png" alt="CuyChef Premium" onerror="this.src='https://placehold.co/500x400?text=Sube+tu+foto+aquí'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="benefits-section">
+        <div class="section-container">
+            <h2>¿Por qué elegir CuyChef en Abancay?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>Higiene Garantizada</h3>
+                    <p>Procesado bajo estrictos estándares sanitarios y sellado al vacío de inmediato para una protección total.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⏳</div>
+                    <h3>Mayor Duración</h3>
+                    <p>Conserva la frescura, el color y el sabor tierno de la carne en tu congelador sin quemarse por el frío.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🍳</div>
+                    <h3>Listo para la Olla</h3>
+                    <p>Completamente limpio y libre de impurezas. Directo para preparar un buen cuy chactado o al horno al instante.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE VALOR NUTRICIONAL -->
+    <section id="nutricion" class="nutrition-section">
+        <div class="section-container">
+            <div class="nutrition-row">
+                <div class="nutrition-compare">
+                    <div class="compare-box premium">
+                        <h4>20.3%</h4>
+                        <p>Proteínas en carne de cuy</p>
+                    </div>
+                    <div class="compare-box">
+                        <h4>18.3%</h4>
+                        <p>Proteínas en carne de aves</p>
+                    </div>
+                    <div class="compare-box">
+                        <h4>17.5%</h4>
+                        <p>Proteínas en carne de vacuno</p>
+                    </div>
+                </div>
+                
+                <div class="nutrition-image">
+                    <img src="/img/cuy-empaque.png" alt="Cuy envasado al vacío real" onerror="this.src='https://placehold.co/300x400?text=Foto+Cuy+Empacado'">
+                </div>
+                
+                <div class="nutrition-text">
+                    <span class="sub-title">Alto valor Biológico</span>
+                    <h2>Carne de Cuy</h2>
+                    <p>La carne de cuy tiene un alto valor biológico, debido a que contiene los aminoácidos y ácidos grasos esenciales requeridos en la nutrición humana.</p>
+                    <p class="source-tag">Según el Centro Nacional de Alimentación y Nutrición del Instituto Nacional de Salud (INS) del Ministerio de Salud (Minsa)</p>
+                    
+                    <div class="minerals-grid">
+                        <div class="mineral-item">🎯 29 mg de Calcio</div>
+                        <div class="mineral-item">🎯 1.9 mg de Hierro</div>
+                        <div class="mineral-item">🎯 29 mg de Fósforo</div>
+                        <div class="mineral-item">🎯 6.50 mg de Niacina</div>
+                        <div class="mineral-item">🎯 1.57 mg de Zinc</div>
+                        <div class="mineral-item">🎯 96 kilocalorías</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nutrition-row reverse">
+                <div class="nutrition-text">
+                    <span class="sub-title">Nutritivo y Delicioso</span>
+                    <h2>Mayor proteína que otras carnes</h2>
+                    <p>La carne de cuy tiene alta digestibilidad, baja concentración de colesterol y triglicéridos, alta presencia de ácidos grasos linoleico y linolénico, esenciales para el ser humano.</p>
+                    <p>La existencia de estos ácidos grasos es muy baja o casi inexistente en otras carnes, y estos son precursores de la conformación del ácido graso araquidónico (AA) y ácido graso docosahexaenoico (DHA). Ambas sustancias son vitales para el desarrollo de las neuronas y las membranas celulares.</p>
+                </div>
+                <div class="nutrition-image large">
+                    <img src="/img/cuy-salud.png" alt="Propiedades de la carne de cuy" onerror="this.src='https://placehold.co/500x300?text=Carne+de+Cuy+Nutritiva'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Videos -->
+    <section id="videos" class="video-section">
+        <div class="section-container">
+            <h2>Conoce nuestra pasión desde el origen</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/5F_f3M9G6gE" allowfullscreen></iframe>
+                    </div>
+                    <h3>1. Nuestra Crianza Tecnificada</h3>
+                    <p style="color: #666; font-size: 14px; margin: 5px 0 0 0;">Conoce cómo alimentamos y cuidamos a nuestros ejemplares en galpones limpios para garantizar una carne tierna y nutritiva.</p>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/6_6vUuM1Crc" allowfullscreen></iframe>
+                    </div>
+                    <h3>2. Proceso de Selección y Vacío</h3>
+                    <p style="color: #666; font-size: 14px; margin: 5px 0 0 0;">Te mostramos la rigurosa limpieza, el trozado exacto y la tecnología de sellado que mantiene las propiedades intactas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo de Productos -->
+    <section id="catalogo" class="catalog-section">
+        <div class="section-container">
+            <h2>Nuestros Productos Premium</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/img/cuy-natural.png" alt="Cuy Entero Sin Aderezo" onerror="this.src='https://placehold.co/350x250?text=Foto+Cuy+Natural'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cuy Entero (Sin Aderezo)</h3>
+                        <div class="rating">⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+                        <p style="color: #666; font-size: 14px; margin: 0 0 15px 0;">Cuy entero seleccionado, eviscerado y empacado al vacío al natural. Ideal para tus propias recetas tradicionales.</p>
+                        <div class="price">S/ 45.00</div>
+                        <button class="btn-add-cart" data-nombre="Cuy Entero (Sin Aderezo)" data-precio="45.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/img/cuy-aderezado.png" alt="Cuy Entero Aderezado" onerror="this.src='https://placehold.co/350x250?text=Foto+Cuy+Aderezado'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cuy Entero Aderezado</h3>
+                        <div class="rating">⭐⭐⭐⭐⭐ <span>(5.0)</span></div>
+                        <p style="color: #666; font-size: 14px; margin: 0 0 15px 0;">Marinado con una receta especial de ajíes, chicha de jora y especias. Listo para meter directo al horno o caja china.</p>
+                        <div class="price">S/ 49.00</div>
+                        <button class="btn-add-cart" data-nombre="Cuy Entero Aderezado" data-precio="49.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/img/cuy-trozado.png" alt="Medio Cuy Trozado" onerror="this.src='https://placehold.co/350x250?text=Foto+Cuy+Trozado'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Medio Cuy Trozado</h3>
+                        <div class="rating">⭐⭐⭐⭐⭐ <span>(4.8)</span></div>
+                        <p style="color: #666; font-size: 14px; margin: 0 0 15px 0;">Cortado perfectamente en cuartos limpios y empacado al vacío. La porción exacta y práctica para un almuerzo rápido.</p>
+                        <div class="price">S/ 24.00</div>
+                        <button class="btn-add-cart" data-nombre="Medio Cuy Trozado" data-precio="24.00">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE RECETAS -->
+    <section id="recetas" class="recipes-section">
+        <div class="section-container">
+            <h2>Inspírate en tu cocina</h2>
+            <p style="color: #61554e; max-width: 700px; margin: -30px auto 50px auto; font-size: 16px;">Mira los espectaculares platos tradicionales y gourmet que puedes preparar fácilmente con nuestros cortes listos.</p>
+            <div class="recipes-grid">
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="/img/cuy-chactado.png" alt="Cuy Chactado Crujiente" onerror="this.src='https://placehold.co/380x250?text=Cuy+Chactado+Crujiente'">
+                    </div>
+                    <div class="recipe-info">
+                        <span class="recipe-tag">Tradicional</span>
+                        <h3>Cuy Chactado Crujiente</h3>
+                        <p>Consigue ese crocante perfecto por fuera y carne jugosa por dentro. Ideal usando nuestro *Medio Cuy Trozado*.</p>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="/img/cuy-alhorno.png" alt="Cuy al Horno Dorado" onerror="this.src='https://placehold.co/380x250?text=Cuy+al+Horno+Dorado'">
+                    </div>
+                    <div class="recipe-info">
+                        <span class="recipe-tag" style="background-color: var(--primary-color);">Fácil</span>
+                        <h3>Cuy al Horno Tradicional</h3>
+                        <p>Marinado con huacatay, ajos y panca. Te quedará tierno y dorado usando nuestro *Cuy Entero Aderezado*.</p>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="/img/pepian-cuy.png" alt="Pepián de Cuy" onerror="this.src='https://placehold.co/380x250?text=Pepián+de+Cuy'">
+                    </div>
+                    <div class="recipe-info">
+                        <span class="recipe-tag" style="background-color: #7c533c;">Gourmet</span>
+                        <h3>Pepián de Cuy</h3>
+                        <p>Un guiso espeso, sabroso y muy reconfortante. El almuerzo dominical perfecto usando el *Cuy Entero Sin Aderezo*.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE COMPRA FIXED / CHECKOUT INTEGRADO -->
+    <section id="carrito-seccion" class="checkout-section">
+        <div class="section-container">
+            <h2>🛒 Tu Carrito de Compras</h2>
+            <p style="color: #61554e; margin: -20px 0 40px 0;">Revisa tus productos seleccionados y confirma tus datos de despacho de manera segura.</p>
+            
+            <!-- CASO 1: Carrito vacío -->
+            <div id="carrito-vacio" class="cart-empty-panel">
+                <div style="font-size: 50px; margin-bottom: 15px;">🛒</div>
+                <h3>Tu carrito está actualmente vacío</h3>
+                <p>Navega por nuestro catálogo y agrega tus productos favoritos para agendar tu envío.</p>
+                <a href="#catalogo" class="btn-primary" style="margin-top: 15px; padding: 10px 25px;">Ver Catálogo</a>
+            </div>
+
+            <!-- CASO 2: Carrito con productos -->
+            <div id="carrito-con-items" class="checkout-grid" style="display: none;">
+                
+                <!-- Tabla del resumen del pedido -->
+                <div class="checkout-products-card">
+                    <h3>📋 Detalle del Pedido</h3>
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th style="text-align: center;">Cantidad</th>
+                                <th style="text-align: right;">Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabla-items-cuerpo">
+                            <!-- Inyección dinámica -->
+                        </tbody>
+                    </table>
+                    <div class="cart-total-bar">
+                        <span>Total General:</span>
+                        <strong id="cart-total-global">S/ 0.00</strong>
+                    </div>
+                </div>
+
+                <!-- Formulario de entrega personalizado para Apurímac -->
+                <div class="checkout-form-card">
+                    <h3>📍 Datos para el Despacho (Apurímac)</h3>
+                    <form id="form-despacho-directo">
+                        <div class="form-group">
+                            <label for="nombre">Nombre y Apellido completo:</label>
+                            <input type="text" id="nombre" required placeholder="Ej. René Flores Quispe">
+                        </div>
+                        <div class="form-group">
+                            <label for="distrito">Distrito / Zona de entrega:</label>
+                            <select id="distrito" required>
+                                <option value="" disabled selected>Selecciona tu ubicación</option>
+                                <option value="Abancay (Centro / Cercado)">Abancay (Centro / Cercado)</option>
+                                <option value="Tamburco">Tamburco</option>
+                                <option value="Curahuasi">Curahuasi</option>
+                                <option value="Lambrama">Lambrama</option>
+                                <option value="Circa">Circa</option>
+                                <option value="Chacoche">Chacoche</option>
+                                <option value="Huanipaca">Huanipaca</option>
+                                <option value="Pichirhua">Pichirhua</option>
+                                <option value="San Pedro de Cachora">San Pedro de Cachora</option>
+                                <option value="Andahuaylas">Andahuaylas (Ciudad)</option>
+                                <option value="Otro sector de Apurímac">Otro sector / Provincia de Apurímac</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="direccion">Dirección Exacta o Referencia de entrega:</label>
+                            <input type="text" id="direccion" required placeholder="Ej. Av. Díaz Barcenas 315 / Frente a la plaza">
+                        </div>
+                        <button type="submit" class="btn-checkout-send">
+                            Confirmar Pedido vía WhatsApp 🚀
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo llega tu pedido -->
+    <section class="steps-section">
+        <div class="section-container">
+            <h2>¿Cómo llega tu pedido?</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Haz tu Pedido</h3>
+                    <p>Selecciona tus cortes favoritos desde nuestro catálogo web y completa el formulario de envío rápido.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Control y Frescura</h3>
+                    <p>Empacamos tu cuy al vacío manteniendo la cadena de frío para proteger sus propiedades intactas.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Entrega Local</h3>
+                    <p>Recibe tu pedido directamente en tu domicilio en Abancay o programado en agencias autorizadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials-section">
+        <div class="section-container">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="comment">"El cuy llegó limpio y fresco aquí a Tamburco. El sabor y la textura son de primera calidad, ideal para el almuerzo familiar."</p>
+                    <div class="client-info">
+                        <strong>Mario Huamán</strong>
+                        <span>Cliente Frecuente</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="comment">"El sellado al vacío es excelente. Compré varios para guardarlos en la congeladora y se mantienen como el primer día."</p>
+                    <div class="client-info">
+                        <strong>Elena Palomino</strong>
+                        <span>Abancay Centro</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="comment">"Muy buena atención. El pedido llegó a tiempo para preparar el cuy al horno el domingo. Muy recomendado."</p>
+                    <div class="client-info">
+                        <strong>Carlos Cárdenas</strong>
+                        <span>Compradora Satisfecha</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes -->
+    <section id="faqs" class="faq-section">
+        <div class="section-container">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>¿Cuánto tiempo puede durar el cuy envasado al vacío?</summary>
+                    <p>En congelación, mantiene su frescura, suavidad y sabor original hasta por 6 meses. El sellado al vacío evita por completo que la carne se reseque o absorba malos olores.</p>
+                </details>
+                <details>
+                    <summary>¿A qué zonas realizan envíos y con cuánta anticipación pido?</summary>
+                    <p>Realizamos entregas directas a domicilio en todo Abancay y Tamburco. Para distritos de la provincia o envíos a Andahuaylas, coordinamos salidas programadas semanales o envíos por agencia regular.</p>
+                </details>
+                <details>
+                    <summary>¿Cómo se recomienda descongelar el cuy antes de cocinarlo?</summary>
+                    <p>Lo ideal es pasar el empaque sellado desde el congelador a la parte baja de la refrigeradora la noche anterior para una descongelación lenta que cuide los jugos de la carne.</p>
+                </details>
+                <details>
+                    <summary>¿El producto viene listo para la olla o debo lavarlo?</summary>
+                    <p>Viene completamente eviscerado, libre de impurezas y procesado de forma técnica. Está totalmente listo para abrir el empaque, sazonar y colocar directo a la cocción.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contacto" class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>🐹 CuyChef</h3>
+                <p>Ofreciendo la mejor experiencia gastronómica con carne de calidad premium, empacada con tecnología al vacío desde Apurímac.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#videos">Nuestra Crianza</a></li>
+                    <li><a href="#nutricion">Nutrición</a></li>
+                    <li><a href="#catalogo">Productos</a></li>
+                    <li><a href="#recetas">Recetas</a></li>
+                    <li><a href="#carrito-seccion">Carrito</a></li>
+                    <li><a href="#faqs">Preguntas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Atención y Despachos</h3>
+                <p>Lun a Sáb: 8:00 AM - 6:00 PM<br>Envíos locales en Abancay y provincias de la región.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Formas de Pago</h3>
+                <div class="payment-methods">
+                    <span>📱 Yape / Plin</span>
+                    <span>💳 Transferencias</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CuyChef - Abancay. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- BOTÓN DE WHATSAPP -->
+    <a href="https://wa.me/51969914021?text=Hola%20CuyChef" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="30" height="30" fill="white"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+    </a>
+
+    <!-- LÓGICA DE INTERACTIVIDAD REACTIVA -->
+    <script>
+        const miTelefono = "51969914021"; 
+        let carrito = [];
+
+        const panelVacio = document.getElementById('carrito-vacio');
+        const panelLleno = document.getElementById('carrito-con-items');
+        const tablaCuerpo = document.getElementById('tabla-items-cuerpo');
+        const totalGlobalTxt = document.getElementById('cart-total-global');
+        const formDespacho = document.getElementById('form-despacho-directo');
+
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        const svgHamburguesa = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24" fill="currentColor"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM416 448H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32z"/></svg>`;
+        const svgCerrar = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="24" height="24" fill="currentColor"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>`;
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuToggle.innerHTML = navMenu.classList.contains('active') ? svgCerrar : svgHamburguesa;
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(enlace => {
+            enlace.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                menuToggle.innerHTML = svgHamburguesa;
+            });
+        });
+
+        document.querySelectorAll('.btn-add-cart').forEach(boton => {
+            boton.addEventListener('click', (e) => {
+                const nombre = boton.getAttribute('data-nombre');
+                const precio = parseFloat(boton.getAttribute('data-precio'));
+                const existe = carrito.find(item => item.nombre === nombre);
+
+                if (existe) {
+                    existe.cantidad++;
+                } else {
+                    carrito.push({ nombre, precio, cantidad: 1 });
+                }
+                
+                actualizarInterfazCarrito();
+
+                const textoOriginal = boton.innerText;
+                boton.innerText = "¡Agregado! 🛒";
+                boton.style.backgroundColor = "#1b815a";
+                boton.style.color = "white";
+                
+                setTimeout(() => {
+                    boton.innerText = textoOriginal;
+                    boton.style.backgroundColor = "transparent";
+                    boton.style.color = "#1b815a";
+                }, 1000);
+            });
+        });
+
+        window.cambiarCantidad = function(index, cambio) {
+            carrito[index].cantidad += cambio;
+            if (carrito[index].cantidad <= 0) {
+                carrito.splice(index, 1);
+            }
+            actualizarInterfazCarrito();
+        };
+
+        function actualizarInterfazCarrito() {
+            const totalItems = carrito.reduce((suma, item) => suma + item.cantidad, 0);
+            document.getElementById('contador-carrito').innerText = totalItems;
+
+            if (carrito.length === 0) {
+                panelVacio.style.display = 'block';
+                panelLleno.style.display = 'none';
+            } else {
+                panelVacio.style.display = 'none';
+                panelLleno.style.display = 'grid';
+                
+                tablaCuerpo.innerHTML = '';
+                let total = 0;
+
+                carrito.forEach((item, index) => {
+                    const subtotal = item.precio * item.cantidad;
+                    total += subtotal;
+                    tablaCuerpo.innerHTML += `
+                        <tr>
+                            <td><strong style="color: #32231c;">${item.nombre}</strong></td>
+                            <td>S/ ${item.precio.toFixed(2)}</td>
+                            <td style="text-align: center;">
+                                <div class="qty-container">
+                                    <button class="btn-qty" onclick="cambiarCantidad(${index}, -1)">-</button>
+                                    <span class="qty-val">${item.cantidad}</span>
+                                    <button class="btn-qty" onclick="cambiarCantidad(${index}, 1)">+</button>
+                                </div>
+                            </td>
+                            <td style="text-align: right; font-weight: 700; color: #1b815a;">S/ ${subtotal.toFixed(2)}</td>
+                        </tr>
+                    `;
+                });
+
+                totalGlobalTxt.innerText = `S/ ${total.toFixed(2)}`;
+            }
+        }
+
+        formDespacho.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const clienteNombre = document.getElementById('nombre').value;
+            const clienteDistrito = document.getElementById('distrito').value;
+            const clienteDireccion = document.getElementById('direccion').value;
+
+            let mensaje = "¡Hola CuyChef! 👋 Me gustaría realizar el siguiente pedido desde Apurímac:\n\n";
+            let total = 0;
+
+            carrito.forEach(item => {
+                const subtotal = item.precio * item.cantidad;
+                mensaje += `• ${item.cantidad}x ${item.nombre} - S/ ${subtotal.toFixed(2)}\n`;
+                total += subtotal;
+            });
+
+            mensaje += `\n*Total a pagar: S/ ${total.toFixed(2)}*\n\n`;
+            mensaje += "📍 *Datos para el Despacho:*\n";
+            mensaje += `👤 *Nombre:* ${clienteNombre}\n`;
+            mensaje += `🏙️ *Ubicación/Distrito:* ${clienteDistrito}\n`;
+            mensaje += `🏠 *Dirección/Referencia:* ${clienteDireccion}\n\n`;
+            mensaje += "Por favor, confírmenme la atención del pedido para efectuar el pago correspondiente.";
+
+            window.open(`https://wa.me/${miTelefono}?text=${encodeURIComponent(mensaje)}`, '_blank');
+        });
+    </script>
+</body>
+</html>
