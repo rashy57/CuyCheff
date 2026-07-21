@@ -39,3 +39,12 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`✅ Servidor de CuyCheff encendido en http://localhost:${PORT}`);
 });
+// Redirecciones de seguridad para lo demás
+app.get(['/packs', '/combos', '/productos', '/carrito', '/catalogo', '/nutricion'], (req, res) => {
+    res.redirect('/');
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`✅ Servidor de CuyCheff encendido en http://localhost:${PORT}`);
+});
