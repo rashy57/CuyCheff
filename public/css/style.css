@@ -25,10 +25,25 @@ body {
     color: var(--dark-color);
 }
 
-/* BARRA DE NAVEGACIÓN */
-.navbar {
-    background-color: #ffffff;
-    box-shadow: 0 2px 15px rgba(50, 35, 28, 0.05);
+/* --- TOP BANNER ELEGANTE Y FLUIDO --- */
+.top-banner {
+    background: linear-gradient(90deg, #2d3e27 0%, #4a6141 50%, #2d3e27 100%) !important;
+    color: #fbf9f3 !important;
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.5px !important;
+    padding: 8px 0 !important;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,0.15) !important;
+    text-align: center;
+}
+
+/* --- BARRA DE NAVEGACIÓN MODERNA (APLICA A TODAS LAS PÁGINAS) --- */
+.navbar-custom, .navbar { 
+    background: linear-gradient(180deg, #8d2317 0%, #701a10 100%) !important; 
+    border-bottom: 3px solid #4a100a !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -40,65 +55,95 @@ body {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 15px 20px;
-    position: relative;
+    padding: 0 20px;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--primary-color);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+.navbar-custom .navbar-brand, .navbar .logo { 
+    color: #ffffff !important; 
+    font-weight: 700 !important; 
+    font-size: 1.8rem !important;
+    font-style: italic !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    text-decoration: none !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
-.nav-menu {
-    display: flex;
-    gap: 25px;
+.brand-logo-img {
+    width: 48px !important;
+    height: 48px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    border: 2px solid #ffffff !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3) !important;
+    transition: transform 0.3s ease !important;
+    background-color: #ffffff !important;
 }
 
-.nav-menu a {
-    text-decoration: none;
-    color: var(--dark-color);
-    font-weight: 600;
-    font-size: 15px;
-    transition: color 0.3s ease;
+.navbar-brand:hover .brand-logo-img, .logo:hover .brand-logo-img {
+    transform: scale(1.08) rotate(-5deg) !important;
 }
 
-.nav-menu a:hover {
-    color: var(--accent-color);
+/* --- ENLACES DEL MENÚ: ELIMINACIÓN TOTAL DE RECUADROS RÍGIDOS --- */
+.navbar-custom .nav-link, 
+.nav-menu a { 
+    color: rgba(251, 249, 243, 0.9) !important; 
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 0.95rem !important; 
+    padding: 8px 16px !important; 
+    margin: 0 3px !important; 
+    border: 1px solid transparent !important; /* Elimina recuadros */
+    border-radius: 20px !important; /* Bordes redondeados tipo cápsula */
+    box-shadow: none !important; 
+    transition: all 0.25s ease-in-out !important;
+    display: inline-block !important;
+    text-decoration: none !important;
 }
 
-.nav-actions {
-    display: flex;
-    align-items: center;
+/* EFECTO HOVER SUAVE */
+.navbar-custom .nav-link:hover, 
+.nav-menu a:hover { 
+    color: #ffffff !important; 
+    background-color: rgba(255, 255, 255, 0.18) !important; 
+    border-color: rgba(255, 255, 255, 0.25) !important;
+    transform: translateY(-2px) !important;
 }
 
-.cart-btn {
-    background: var(--section-alt);
-    color: var(--dark-color);
-    text-decoration: none;
-    padding: 10px 18px;
-    border-radius: 30px;
-    font-weight: 600;
-    display: inline-block;
+/* BOTÓN DESTACADO DE PEDIDO / CARRITO EN TODAS LAS PÁGINAS */
+.btn-pedido-nav, .btn-pedido-destacado, .cart-btn {
+    background-color: #4a6141 !important;
+    color: #ffffff !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600 !important;
+    border: 1px solid #627e57 !important;
+    border-radius: 20px !important;
+    padding: 8px 18px !important;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2) !important;
+    text-decoration: none !important;
+    display: inline-block !important;
 }
 
-/* BOTÓN DE MENÚ PARA CELULARES */
+.btn-pedido-nav:hover, .btn-pedido-destacado:hover, .cart-btn:hover {
+    background-color: #384b30 !important;
+    border-color: #ffffff !important;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.3) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* MENU TOGGLE PARA CELULARES */
 .menu-toggle {
     display: none;
     background: none;
     border: none;
     font-size: 26px;
-    color: var(--dark-color);
+    color: #ffffff;
     cursor: pointer;
     padding: 5px;
-    margin-left: 15px;
 }
 
-/* PORTADA */
+/* PORTADA (HERO SECTION) */
 .hero-section {
     padding: 80px 20px;
     background: linear-gradient(135deg, #135c3f 0%, #0a3a26 100%);
@@ -411,17 +456,26 @@ body {
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: #ffffff;
-        box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+        background: #701a10;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.2);
         padding: 20px 0;
         gap: 15px;
         text-align: center;
-        border-top: 1px solid #f0e6d2;
     }
 
     .nav-menu.active {
         display: flex;
     }
+
+    .navbar-custom .nav-link, .nav-menu a {
+        display: block !important;
+        margin: 5px 20px !important;
+    }
+    
+    .hero-content h1 {
+        font-size: 32px;
+    }
+}
     
     .hero-content h1 {
         font-size: 32px;
