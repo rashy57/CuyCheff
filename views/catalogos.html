@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/logo.png">
+    
+    <title>Catálogo de Productos | CuyCheff Abancay</title>
+    <meta name="description" content="Catálogo completo de cuy seleccionado envasado al vacío en Abancay. Compra cuy entero, trozado o en packs aderezados listos para cocinar.">
+
+    <!-- Fuentes Estilo Vintage -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap e Iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <style>
+        body { font-family: 'Lora', serif; background-color: #faf8f5; color: #3d3530; }
+        h1, h2, h3, h4, h5, h6, .navbar-brand { font-family: 'Playfair Display', serif; font-weight: 700; color: #2b211b; }
+        .top-banner { background-color: #4a6141; color: #fbf9f3; font-size: 0.85rem; }
+        .navbar-custom { background-color: #8d2317 !important; border-bottom: 2px solid #701a10; }
+        .navbar-custom .navbar-brand { color: #fbf9f3 !important; font-size: 1.8rem; font-style: italic; display: flex; align-items: center; gap: 10px; }
+        .brand-logo-img { width: 46px; height: 46px; object-fit: cover; border-radius: 50%; border: 2px solid rgba(251, 249, 243, 0.8); background: #fff; }
+        .navbar-custom .nav-link { color: #fbf9f3 !important; font-weight: 500; padding: 6px 14px !important; margin: 3px 4px; border: 1px solid rgba(251, 249, 243, 0.35); border-radius: 3px; display: inline-block; }
+        .navbar-custom .nav-link:hover, .navbar-custom .nav-link.active { color: #8d2317 !important; background-color: #fbf9f3 !important; }
+        .bg-organic { background-color: #f2ebd9 !important; border-top: 1px solid #dfd7be; border-bottom: 1px solid #dfd7be; }
+        .price-tag { color: #8d2317; font-family: 'Playfair Display', serif; font-weight: 700; font-style: italic; }
+        .card-product { border: 1px solid #e3decb !important; background-color: #ffffff; border-radius: 6px !important; transition: transform 0.25s ease, box-shadow 0.25s ease; }
+        .card-product:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(43,33,27,0.08) !important; }
+        .btn-add-cart-custom { background-color: #8d2317 !important; color: #ffffff !important; border-radius: 4px !important; font-family: 'Playfair Display', serif; font-size: 1rem; transition: background-color 0.2s ease; }
+        .btn-add-cart-custom:hover { background-color: #701a10 !important; }
+        .btn-filter { border: 1px solid #8d2317; color: #8d2317; background: #fff; border-radius: 20px; padding: 6px 18px; font-size: 0.9rem; font-weight: 600; }
+        .btn-filter.active, .btn-filter:hover { background-color: #8d2317; color: #fff; }
+        .social-links a { color: #dcd7cc; font-size: 1.25rem; }
+        .social-links a:hover { color: #fbf9f3; }
+    </style>
+</head>
+<body>
+
+    <!-- BANNER SUPERIOR -->
+    <div class="top-banner py-2 text-center fw-bold border-bottom border-dark border-opacity-10">
+        <div class="container">
+            <span>🚚 Envíos diarios en Abancay y Tamburco | 📦 Salidas programadas a provincias de Apurímac</span>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm sticky-top">
+        <div class="container">
+            <a href="/index" class="navbar-brand">
+                <img src="/img/logo.png" alt="Logo CuyCheff" class="brand-logo-img" onerror="this.src='https://placehold.co/100x100?text=CuyCheff'">
+                <span>CuyCheff</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="/index">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/crianza">Nuestra Crianza</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/nutricion">Nutrición</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/recetas">Recetas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index#carrito-seccion">🛒 Mi Carrito</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CABECERA -->
+    <section class="py-5 bg-organic text-center">
+        <div class="container">
+            <span class="badge text-uppercase px-3 py-2 text-white mb-2" style="background-color: #4a6141;">100% Fresco y Envasado al Vacío</span>
+            <h1 class="display-5 fw-bold" style="font-style: italic;">Nuestra Despensa Selecta</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 700px;">
+                Cortes limpios, seleccionados y listos para cocinar. Elige la presentación ideal para tu hogar o reunión familiar.
+            </p>
+        </div>
+    </section>
+
+    <!-- FILTROS Y PRODUCTOS -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            
+            <!-- Botones de Filtro -->
+            <div class="d-flex justify-content-center gap-2 flex-wrap mb-5">
+                <button class="btn btn-filter active" onclick="filtrarProductos('todos', this)">Todos los Cortes</button>
+                <button class="btn btn-filter" onclick="filtrarProductos('enteros', this)">Cuyes Enteros</button>
+                <button class="btn btn-filter" onclick="filtrarProductos('trozados', this)">Cortes Trozados</button>
+                <button class="btn btn-filter" onclick="filtrarProductos('packs', this)">Packs Familiares</button>
+            </div>
+
+            <!-- Grilla de Productos -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="contenedor-productos">
+                
+                <!-- Producto 1: Cuy Entero Sin Aderezo -->
+                <div class="col item-producto" data-categoria="enteros">
+                    <div class="card h-100 card-product d-flex flex-column justify-content-between p-3">
+                        <div>
+                            <div class="p-3 bg-light rounded text-center mb-3">
+                                <img src="/img/cuy-natural.png" class="img-fluid rounded object-fit-contain" style="max-height: 200px;" alt="Cuy Entero Sin Aderezo" onerror="this.src='https://placehold.co/350x250?text=Cuy+Sin+Aderezo'">
+                            </div>
+                            <span class="badge bg-secondary mb-2">500g - 550g</span>
+                            <h3 class="h5 fw-bold mb-1">Cuy Entero (Sin Aderezo)</h3>
+                            <p class="text-muted small mb-3">Cuy entero eviscerado y empacado al vacío al natural. Ideal para tus aderezos caseros.</p>
+                        </div>
+                        <div class="text-center pt-2 border-top">
+                            <div class="fs-4 mb-2 price-tag">S/ 37.00</div>
+                            <button class="btn btn-add-cart-custom w-100 py-2 fw-bold" onclick="agregarAlPedido('Cuy Entero Sin Aderezo (500g-550g)', 37.00)">Agregar al Pedido</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2: Cuy Entero Aderezado -->
+                <div class="col item-producto" data-categoria="enteros">
+                    <div class="card h-100 card-product d-flex flex-column justify-content-between p-3">
+                        <div>
+                            <div class="p-3 bg-light rounded text-center mb-3">
+                                <img src="/img/cuy-aderezado.png" class="img-fluid rounded object-fit-contain" style="max-height: 200px;" alt="Cuy Entero Aderezado" onerror="this.src='https://placehold.co/350x250?text=Cuy+Aderezado'">
+                            </div>
+                            <span class="badge bg-danger mb-2">Favorito 🔥</span>
+                            <h3 class="h5 fw-bold mb-1">Cuy Entero Aderezado</h3>
+                            <p class="text-muted small mb-3">Marinado tradicionalmente con ajíes andinos, chicha y especias de la casa (500g - 550g).</p>
+                        </div>
+                        <div class="text-center pt-2 border-top">
+                            <div class="fs-4 mb-2 price-tag">S/ 39.00</div>
+                            <button class="btn btn-add-cart-custom w-100 py-2 fw-bold" onclick="agregarAlPedido('Cuy Entero Aderezado (500g-550g)', 39.00)">Agregar al Pedido</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3: Medio Cuy Sin Aderezo -->
+                <div class="col item-producto" data-categoria="trozados">
+                    <div class="card h-100 card-product d-flex flex-column justify-content-between p-3">
+                        <div>
+                            <div class="p-3 bg-light rounded text-center mb-3">
+                                <img src="/img/cuy-trozado.png" class="img-fluid rounded object-fit-contain" style="max-height: 200px;" alt="Medio Cuy Trozado" onerror="this.src='https://placehold.co/350x250?text=Medio+Cuy+Trozado'">
+                            </div>
+                            <span class="badge bg-secondary mb-2">Personal</span>
+                            <h3 class="h5 fw-bold mb-1">Medio Cuy Trozado</h3>
+                            <p class="text-muted small mb-3">Piezas cortadas limpiamente al natural empacadas al vacío. Para 1 a 2 personas.</p>
+                        </div>
+                        <div class="text-center pt-2 border-top">
+                            <div class="fs-4 mb-2 price-tag">S/ 20.00</div>
+                            <button class="btn btn-add-cart-custom w-100 py-2 fw-bold" onclick="agregarAlPedido('Medio Cuy Trozado (Sin Aderezo)', 20.00)">Agregar al Pedido</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4: Medio Cuy Aderezado -->
+                <div class="col item-producto" data-categoria="trozados">
+                    <div class="card h-100 card-product d-flex flex-column justify-content-between p-3">
+                        <div>
+                            <div class="p-3 bg-light rounded text-center mb-3">
+                                <img src="/img/cuy-trozado.png" class="img-fluid rounded object-fit-contain" style="max-height: 200px;" alt="Medio Cuy Aderezado" onerror="this.src='https://placehold.co/350x250?text=Medio+Cuy+Aderezado'">
+                            </div>
+                            <span class="badge bg-success mb-2">Nuevo ✨</span>
+                            <h3 class="h5 fw-bold mb-1">Medio Cuy Aderezado</h3>
+                            <p class="text-muted small mb-3">Trozado y sazonado listo para freír como Cuy Chactado rápido en sartén.</p>
+                        </div>
+                        <div class="text-center pt-2 border-top">
+                            <div class="fs-4 mb-2 price-tag">S/ 21.00</div>
+                            <button class="btn btn-add-cart-custom w-100 py-2 fw-bold" onclick="agregarAlPedido('Medio Cuy Trozado Aderezado', 21.00)">Agregar al Pedido</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 5: Pack Dúo CuyCheff -->
+                <div class="col item-producto" data-categoria="packs">
+                    <div class="card h-100 card-product d-flex flex-column justify-content-between p-3 border-danger">
+                        <div>
+                            <div class="p-3 bg-light rounded text-center mb-3">
+                                <img src="/img/cuy-aderezado.png" class="img-fluid rounded object-fit-contain" style="max-height: 200px;" alt="Pack Dúo CuyCheff" onerror="this.src='https://placehold.co/350x250?text=Pack+Duo'">
+                            </div>
+                            <span class="badge bg-danger mb-2">Ahorro Familiar</span>
+                            <h3 class="h5 fw-bold mb-1">Pack Dúo CuyCheff</h3>
+                            <p class="text-muted small mb-3">Incluye 2 Cuyes Enteros Aderezados de 500g-550g envasados al vacío con sazón lista.</p>
+                        </div>
+                        <div class="text-center pt-2 border-top">
+                            <div class="fs-4 mb-2 price-tag">S/ 76.00 <span class="fs-6 text-decoration-line-through text-muted">S/ 78.00</span></div>
+                            <button class="btn btn-add-cart-custom w-100 py-2 fw-bold" onclick="agregarAlPedido('Pack Dúo CuyCheff (2 Enteros Aderezados)', 76.00)">Agregar Pack</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER DE COMPRA DIRECTA POR WHATSAPP -->
+    <section class="py-5 bg-organic">
+        <div class="container text-center max-width-md">
+            <h3 class="fw-bold mb-2" style="font-style: italic;">¿Necesitas un pedido especial o al por mayor?</h3>
+            <p class="text-muted small mb-4">Atendemos pedidos para restaurantes, eventos familiares y envíos regionales en Apurímac.</p>
+            <a href="https://wa.me/51969914021?text=Hola%20CuyCheff,%20quisiera%20cotizar%20un%20pedido%20al%20por%20mayor" target="_blank" class="btn btn-success fw-bold px-4 py-2 shadow-sm">
+                <i class="bi bi-whatsapp me-2"></i> Cotizar por WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer py-5" style="background-color: #2b211b; color: #fbf9f3; border-top: 3px solid #8d2317;">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h3 class="h4 mb-3" style="color: #fbf9f3; font-style: italic;">CuyCheff</h3>
+                    <p class="small text-muted mb-3" style="color: #dcd7cc !important;">Tradición y calidad en carne de cuy envasada al vacío desde Abancay, Apurímac.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://tiktok.com" target="_blank"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://wa.me/51969914021" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-md-center">
+                    <h3 class="h5 mb-3" style="color: #fbf9f3;">Navegación Rápida</h3>
+                    <ul class="list-unstyled small d-flex flex-column gap-1">
+                        <li><a href="/index" style="color: #dcd7cc; text-decoration:none;">Inicio</a></li>
+                        <li><a href="/crianza" style="color: #dcd7cc; text-decoration:none;">Nuestra Crianza</a></li>
+                        <li><a href="/nutricion" style="color: #dcd7cc; text-decoration:none;">Nutrición</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <h3 class="h5 mb-3" style="color: #fbf9f3;">Pedidos Directos</h3>
+                    <p class="small text-muted mb-2" style="color: #dcd7cc !important;">📲 WhatsApp: 969 914 021</p>
+                    <p class="small text-muted" style="color: #dcd7cc !important;">📍 Abancay, Apurímac - Perú</p>
+                </div>
+            </div>
+            <div class="text-center mt-4 pt-3 border-top" style="border-top-color: rgba(251,249,243,0.08) !important;">
+                <p class="small text-muted mb-0">&copy; 2026 CuyCheff - Abancay. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Filtrado dinámico de categorías
+        function filtrarProductos(categoria, boton) {
+            document.querySelectorAll('.btn-filter').forEach(b => b.classList.remove('active'));
+            boton.classList.add('active');
+
+            const items = document.querySelectorAll('.item-producto');
+            items.forEach(item => {
+                if (categoria === 'todos' || item.getAttribute('data-categoria') === categoria) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Redirección directa al carrito con producto agregado
+        function agregarAlPedido(nombre, precio) {
+            window.location.href = `/index#carrito-seccion`;
+        }
+    </script>
+</body>
+</html>

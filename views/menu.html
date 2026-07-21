@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú | CuyChef Abancay</title>
+    <!-- Bootstrap para un diseño profesional y responsive -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados para mantener el look de tu marca */
+        .navbar { background-color: #b31919; } /* Rojo corporativo */
+        .navbar-brand { font-weight: bold; font-size: 1.5rem; }
+        .nav-link { color: white !important; }
+        .nav-link:hover { color: #f8f9fa !important; }
+        .footer { background-color: #212529; color: white; padding: 40px 0; }
+        .footer a { color: #adb5bd; text-decoration: none; }
+        .footer a:hover { color: white; }
+    </style>
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/">🐹 CuyChef</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/crianza">Nuestra Crianza</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/nutricion">Nutrición</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/recetas">Recetas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/menu">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contacto">Contacto</a></li>
+                    <li class="nav-item">
+                        <a href="/carrito-seccion" class="nav-link btn btn-outline-light ms-lg-3">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO DEL MENÚ -->
+    <main class="container py-5">
+        <section id="menu" class="text-center">
+            <h1 class="display-4 fw-bold mb-3">Nuestro Menú</h1>
+            <p class="lead text-muted">Descubre todas las preparaciones que puedes disfrutar con nuestra carne de cuy premium.</p>
+            <hr class="my-4">
+            <!-- Aquí puedes poner tus platos más adelante con el estilo de tarjetas -->
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer mt-auto">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h3>🐹 CuyChef</h3>
+                    <p>La mejor experiencia gastronómica desde Apurímac.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Enlaces</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="/productos">Productos</a></li>
+                        <li><a href="/contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom pt-3 border-top border-secondary">
+                <p>&copy; 2026 CuyChef - Abancay.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS para que el menú sea funcional -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

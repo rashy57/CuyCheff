@@ -22,7 +22,7 @@
     <!-- Fuentes Estilo Vintage y Tradicional -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     
     <!-- Bootstrap y Iconos de Línea Fina -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -30,12 +30,7 @@
     <link rel="stylesheet" href="/css/style.css">
     
     <style>
-        /* DESPLAZAMIENTO SUAVE ENTRE SECCIONES */
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 85px;
-        }
-
+        /* --- CORE VINTAGE ORDENADO --- */
         body {
             font-family: 'Lora', serif;
             background-color: #faf8f5; 
@@ -48,91 +43,68 @@
             color: #2b211b; 
         }
 
-        /* BANNER SUPERIOR FLUIDO Y ELEGANTE */
+        /* BANNER TOP PROMOCIONAL */
         .top-banner {
-            background: linear-gradient(90deg, #2d3e27 0%, #4a6141 50%, #2d3e27 100%) !important;
-            color: #fbf9f3 !important;
-            font-size: 0.85rem !important;
-            font-weight: 500 !important;
-            letter-spacing: 0.5px !important;
-            padding: 8px 0 !important;
-            box-shadow: inset 0 -1px 0 rgba(0,0,0,0.15) !important;
+            background-color: #4a6141;
+            color: #fbf9f3;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
         }
 
-        /* CABECERA PRINCIPAL / NAVEGACIÓN REDISEÑADA */
         .navbar-custom { 
-            background: linear-gradient(180deg, #8d2317 0%, #701a10 100%) !important; 
-            border-bottom: 3px solid #4a100a !important;
-            padding-top: 10px !important;
-            padding-bottom: 10px !important;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+            background-color: #8d2317 !important; 
+            border-bottom: 2px solid #701a10;
+            padding-top: 8px;
+            padding-bottom: 8px;
         }
         
+        /* LOGO CON IMAGEN OFICIAL */
         .navbar-custom .navbar-brand { 
-            color: #ffffff !important; 
-            font-weight: 700 !important; 
-            font-size: 1.8rem !important;
-            font-style: italic !important;
-            display: flex !important;
-            align-items: center !important;
-            gap: 12px !important;
+            color: #fbf9f3 !important; 
+            font-weight: 700; 
+            font-size: 1.8rem;
+            font-style: italic;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         .brand-logo-img {
-            width: 48px !important;
-            height: 48px !important;
-            object-fit: cover !important;
-            border-radius: 50% !important;
-            border: 2px solid #ffffff !important;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.3) !important;
-            transition: transform 0.3s ease !important;
-            background-color: #ffffff !important;
+            width: 46px;
+            height: 46px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid rgba(251, 249, 243, 0.8);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            background-color: #ffffff;
         }
 
         .navbar-brand:hover .brand-logo-img {
-            transform: scale(1.08) rotate(-5deg) !important;
+            transform: scale(1.08) rotate(-5deg);
         }
 
-        /* ELIMINACIÓN TOTAL DE RECUADROS RÍGIDOS Y BORDES RECTANGULARES */
+        /* --- CUADROS DEL MENÚ DETALLADOS --- */
         .navbar-custom .nav-link { 
-            color: rgba(251, 249, 243, 0.9) !important; 
-            font-family: 'Poppins', sans-serif !important;
-            font-weight: 500 !important;
-            font-size: 0.95rem !important; 
-            padding: 8px 16px !important; 
-            margin: 0 3px !important; 
-            border: 1px solid transparent !important; /* Elimina recuadros */
-            border-radius: 20px !important; /* Bordes redondeados modernos */
-            box-shadow: none !important; 
-            transition: all 0.25s ease-in-out !important;
-            display: inline-block !important;
+            color: #fbf9f3 !important; 
+            font-weight: 500;
+            font-size: 1.05rem; 
+            padding: 6px 14px !important; 
+            margin: 3px 4px; 
+            border: 1px solid rgba(251, 249, 243, 0.35); 
+            border-radius: 3px; 
+            letter-spacing: 0.3px;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05); 
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-block;
         }
 
-        /* EFECTO HOVER MODERNO ESTILO CÁPSULA */
         .navbar-custom .nav-link:hover { 
-            color: #ffffff !important; 
-            background-color: rgba(255, 255, 255, 0.18) !important; 
-            border-color: rgba(255, 255, 255, 0.25) !important;
-            transform: translateY(-2px) !important;
-        }
-
-        /* BOTÓN DESTACADO DE PEDIDO / CARRITO */
-        .btn-pedido-destacado {
-            background-color: #4a6141 !important;
-            color: #ffffff !important;
-            font-family: 'Poppins', sans-serif !important;
-            font-weight: 600 !important;
-            border: 1px solid #627e57 !important;
-            border-radius: 20px !important;
-            padding: 8px 18px !important;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.2) !important;
-        }
-
-        .btn-pedido-destacado:hover {
-            background-color: #384b30 !important;
-            border-color: #ffffff !important;
-            box-shadow: 0 5px 12px rgba(0,0,0,0.3) !important;
-            transform: translateY(-2px) !important;
+            color: #8d2317 !important; 
+            background-color: #fbf9f3 !important; 
+            border-color: #fbf9f3 !important;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            transform: translateY(-1px);
         }
 
         .badge-crianza {
@@ -239,6 +211,7 @@
             transform: translateY(-2px);
         }
 
+        /* CARD DE RECETAS CON EFECTO HOVER */
         .recipe-card {
             transition: transform 0.25s ease, box-shadow 0.25s ease;
         }
@@ -246,36 +219,19 @@
             transform: translateY(-4px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
         }
-
-        .btn-tech-sheet {
-            font-size: 0.75rem;
-            color: #4a6141;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .btn-tech-sheet:hover {
-            color: #8d2317;
-            text-decoration: underline;
-        }
-        .tech-box {
-            font-size: 0.78rem;
-            background-color: #fbf9f3;
-            border: 1px dashed #dcd7cc;
-            border-radius: 4px;
-        }
     </style>
 </head>
 <body>
 
     <!-- BANNER PROMOCIONAL INFORMATIVO SUPERIOR -->
-    <div class="top-banner text-center">
+    <div class="top-banner py-2 text-center fw-bold border-bottom border-dark border-opacity-10">
         <div class="container">
-            <span>🚚 Envíos diarios en <strong>Abancay y Tamburco</strong> &nbsp;|&nbsp; 📦 Salidas programadas a provincias de <strong>Apurímac</strong></span>
+            <span>🚚 Envíos diarios en Abancay y Tamburco | 📦 Salidas programadas a provincias de Apurímac</span>
         </div>
     </div>
 
-    <!-- BARRA DE NAVEGACIÓN SUPERIOR REDISEÑADA -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+    <!-- BARRA DE NAVEGACIÓN SUPERIOR CON ENLACES CORREGIDOS -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm sticky-top">
         <div class="container">
             <a href="/" class="navbar-brand">
                 <img src="/img/logo.png" alt="Logo CuyCheff" class="brand-logo-img" onerror="this.src='https://placehold.co/100x100?text=CuyCheff'">
@@ -291,11 +247,12 @@
                     <li class="nav-item"><a class="nav-link" href="#nutricion">Nutrición</a></li>
                     <li class="nav-item"><a class="nav-link" href="#catalogo">Productos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#combos">Packs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/recetas">Recetas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#recetas">Recetas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#carrito-seccion">🛒 Mi Carrito</a></li>
                     <li class="nav-item"><a class="nav-link" href="/faqs">Preguntas</a></li>
                     <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-                        <a href="#carrito-seccion" class="nav-link btn-pedido-destacado">
-                            🛒 Mi Pedido (<span id="contador-carrito">0</span>)
+                        <a href="#carrito-seccion" class="nav-link text-white fw-bold px-3 shadow-sm" style="font-family: 'Playfair Display', serif; border-color: rgba(251, 249, 243, 0.7);">
+                            Pedido (<span id="contador-carrito">0</span>)
                         </a>
                     </li>
                 </ul>
@@ -308,10 +265,10 @@
         <div class="hero-container container">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6 hero-content text-center text-lg-start">
-                    <span class="badge badge-crianza mb-3">🏅 Selección Premium de Apurímac</span>
+                    <span class="badge badge-crianza mb-3">Crianza Responsable en Apurímac</span>
                     <h1 class="display-4 mb-3" style="font-style: italic;">Tradición & Calidad en <span class="brand-name" style="color: #8d2317; font-style: normal;">CuyCheff</span></h1>
-                    <p class="lead mb-4">La mejor experiencia en cuy envasado al vacío (500g - 550g). Fresco, seleccionado cuidadosamente y listo para la alta cocina familiar o gourmet.</p>
-                    <a href="#catalogo" class="btn btn-lg btn-add-cart-custom px-5 py-3 shadow">Explorar Cortes Selectos</a>
+                    <p class="lead mb-4">La mejor experiencia en cuy envasado al vacío (500g - 550g). Fresco, seleccionado cuidadosamente y con despacho a todo Abancay y distritos.</p>
+                    <a href="#catalogo" class="btn btn-lg btn-add-cart-custom px-5 py-3 shadow">Comprar Ahora</a>
                 </div>
                 <div class="col-lg-6 hero-image text-center">
                     <img src="/img/logo.png" class="img-fluid rounded-circle p-2 bg-white shadow-lg border border-3 border-danger" alt="CuyCheff Logo Oficial" style="max-width: 380px;" onerror="this.src='https://placehold.co/400x400?text=Logo+CuyCheff'">
@@ -320,43 +277,8 @@
         </div>
     </section>
 
-    <!-- NUEVO BLOQUE 1: DISTINCIÓN Y GARANTÍA DE MARCA -->
-    <section class="py-4 shadow-sm" style="background-color: #2b211b; color: #fbf9f3; border-top: 3px solid #8d2317; border-bottom: 1px solid #3d3530;">
-        <div class="container">
-            <div class="row text-center g-3 align-items-center">
-                <div class="col-md-4">
-                    <div class="d-flex align-items-center justify-content-center gap-3">
-                        <i class="bi bi-award-fill text-warning fs-2"></i>
-                        <div class="text-start">
-                            <span class="d-block fw-bold text-uppercase small" style="color: #fbf9f3; letter-spacing: 0.5px;">Garantía de Origen</span>
-                            <small style="color: #dcd7cc !important;">Crianza 100% biosegura en Apurímac</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 border-start border-end border-secondary border-opacity-25">
-                    <div class="d-flex align-items-center justify-content-center gap-3">
-                        <i class="bi bi-snow text-info fs-2"></i>
-                        <div class="text-start">
-                            <span class="d-block fw-bold text-uppercase small" style="color: #fbf9f3; letter-spacing: 0.5px;">Cadena de Frío Garantizada</span>
-                            <small style="color: #dcd7cc !important;">Termo-sellado al vacío al instante</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="d-flex align-items-center justify-content-center gap-3">
-                        <i class="bi bi-patch-check-fill text-success fs-2"></i>
-                        <div class="text-start">
-                            <span class="d-block fw-bold text-uppercase small" style="color: #fbf9f3; letter-spacing: 0.5px;">Listo para la Alta Cocina</span>
-                            <small style="color: #dcd7cc !important;">100% Limpio, eviscerado y calibrado</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- BENEFICIOS -->
-    <section class="benefits-section py-5 bg-white border-bottom">
+    <section class="benefits-section py-5 bg-white border-top border-bottom">
         <div class="container max-width-xl">
             <h2 class="text-center mb-5" style="font-style: italic;">¿Por qué elegir la tradición de CuyCheff?</h2>
             <div class="row g-4">
@@ -422,10 +344,7 @@
     <section id="catalogo" class="py-5 bg-white border-bottom">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
-                <div>
-                    <span class="text-uppercase fw-bold text-muted small" style="letter-spacing: 1px;">Selección Especial</span>
-                    <h2 class="mb-0" style="font-style: italic;">Nuestros Cortes y Presentaciones</h2>
-                </div>
+                <h2 class="mb-0" style="font-style: italic;">Nuestros Cortes y Presentaciones</h2>
                 <div class="badge bg-light text-dark border p-2 shadow-sm mt-2 mt-md-0">
                     <span class="stock-pulse me-2"></span>
                     <span class="small fw-normal">Lote fresco de hoy: <strong>14 unidades disponibles</strong></span>
@@ -438,28 +357,16 @@
                 <div class="col">
                     <div class="card h-100 card-product d-flex flex-column justify-content-between">
                         <div>
-                            <div class="p-3 bg-light rounded-top text-center border-bottom border-light position-relative">
-                                <span class="position-absolute top-0 start-0 m-2 badge bg-dark text-white border border-secondary small">Corte Especial</span>
-                                <div class="ratio ratio-4x3 mx-auto mt-2" style="max-width: 280px;">
+                            <div class="p-3 bg-light rounded-top text-center border-bottom border-light">
+                                <div class="ratio ratio-4x3 mx-auto" style="max-width: 280px;">
                                     <img src="/img/cuy-natural.png" class="rounded-1 object-fit-contain" alt="Cuy Entero Sin Aderezo" onerror="this.src='https://placehold.co/350x250?text=Foto+Cuy+Natural'">
                                 </div>
                             </div>
                             <div class="p-3 pb-0 text-center">
-                                <span class="badge bg-secondary mb-1">500g - 550g Calibrado</span>
-                                <h3 class="h6 mb-1 fw-bold">Cuy Entero (Sin Aderezo)</h3>
+                                <span class="badge bg-secondary mb-1">500g - 550g</span>
+                                <h3 class="h6 mb-2 fw-bold">Cuy Entero (Sin Aderezo)</h3>
                                 <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-                                <p class="text-muted small mb-2">Cuy entero eviscerado y empacado al vacío al natural. Listo para tu receta propia.</p>
-                                
-                                <a class="btn-tech-sheet d-inline-block mb-3" data-bs-toggle="collapse" href="#tech1" role="button">
-                                    <i class="bi bi-file-earmark-text me-1"></i> Ver Ficha de Calidad
-                                </a>
-                                <div class="collapse text-start mb-3" id="tech1">
-                                    <div class="p-2 tech-box">
-                                        <div><strong>• Raza:</strong> Selección Perú / Inti</div>
-                                        <div><strong>• Proceso:</strong> Eviscerado & Lavado bioseguro</div>
-                                        <div><strong>• Empaque:</strong> Sellado al vacío de alta densidad</div>
-                                    </div>
-                                </div>
+                                <p class="text-muted small mb-3">Cuy entero eviscerado y empacado al vacío al natural. Listo para tu receta propia.</p>
                             </div>
                         </div>
                         <div class="p-3 pt-0 text-center">
@@ -472,30 +379,18 @@
 
                 <!-- Producto 2: Cuy Entero Aderezado -->
                 <div class="col">
-                    <div class="card h-100 card-product d-flex flex-column justify-content-between border-warning">
+                    <div class="card h-100 card-product d-flex flex-column justify-content-between">
                         <div>
-                            <div class="p-3 bg-light rounded-top text-center border-bottom border-light position-relative">
-                                <span class="position-absolute top-0 start-0 m-2 badge bg-warning text-dark border border-dark fw-bold">⭐ Selección Premium</span>
-                                <div class="ratio ratio-4x3 mx-auto mt-2" style="max-width: 280px;">
+                            <div class="p-3 bg-light rounded-top text-center border-bottom border-light">
+                                <div class="ratio ratio-4x3 mx-auto" style="max-width: 280px;">
                                     <img src="/img/cuy-aderezado.png" class="rounded-1 object-fit-contain" alt="Cuy Entero Aderezado" onerror="this.src='https://placehold.co/350x250?text=Foto+Cuy+Aderezado'">
                                 </div>
                             </div>
                             <div class="p-3 pb-0 text-center">
-                                <span class="badge bg-danger mb-1">Favorito del Chef 🔥</span>
-                                <h3 class="h6 mb-1 fw-bold">Cuy Entero Aderezado</h3>
+                                <span class="badge bg-danger mb-1">Favorito 🔥</span>
+                                <h3 class="h6 mb-2 fw-bold">Cuy Entero Aderezado</h3>
                                 <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-                                <p class="text-muted small mb-2">Marinado con receta tradicional de ajíes, chicha de jora y especias. Listo para hornear.</p>
-                                
-                                <a class="btn-tech-sheet d-inline-block mb-3" data-bs-toggle="collapse" href="#tech2" role="button">
-                                    <i class="bi bi-file-earmark-text me-1"></i> Ver Ficha de Calidad
-                                </a>
-                                <div class="collapse text-start mb-3" id="tech2">
-                                    <div class="p-2 tech-box">
-                                        <div><strong>• Macerado:</strong> 12 hrs en aderezo tradicional</div>
-                                        <div><strong>• Textura:</strong> Carne tierna, bajo contenido graso</div>
-                                        <div><strong>• Rendimiento:</strong> Ideal para 2 a 3 personas</div>
-                                    </div>
-                                </div>
+                                <p class="text-muted small mb-3">Marinado con receta tradicional de ajíes, chicha y especias (500g - 550g). Listo para el horno.</p>
                             </div>
                         </div>
                         <div class="p-3 pt-0 text-center">
@@ -516,20 +411,10 @@
                                 </div>
                             </div>
                             <div class="p-3 pb-0 text-center">
-                                <span class="badge bg-secondary mb-1">Corte Personal</span>
-                                <h3 class="h6 mb-1 fw-bold">Medio Cuy Trozado</h3>
+                                <span class="badge bg-secondary mb-1">Personal</span>
+                                <h3 class="h6 mb-2 fw-bold">Medio Cuy Trozado</h3>
                                 <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-                                <p class="text-muted small mb-2">Cortado limpiamente en piezas al natural empacadas al vacío. Práctico para 1 o 2 personas.</p>
-                                
-                                <a class="btn-tech-sheet d-inline-block mb-3" data-bs-toggle="collapse" href="#tech3" role="button">
-                                    <i class="bi bi-file-earmark-text me-1"></i> Ver Ficha de Calidad
-                                </a>
-                                <div class="collapse text-start mb-3" id="tech3">
-                                    <div class="p-2 tech-box">
-                                        <div><strong>• Cortes:</strong> Presas simétricas lista para freír</div>
-                                        <div><strong>• Peso aprox:</strong> 250g - 280g</div>
-                                    </div>
-                                </div>
+                                <p class="text-muted small mb-3">Cortado limpiamente en piezas al natural empacadas al vacío. Práctico para almuerzos de 1 a 2 personas.</p>
                             </div>
                         </div>
                         <div class="p-3 pt-0 text-center">
@@ -550,20 +435,10 @@
                                 </div>
                             </div>
                             <div class="p-3 pb-0 text-center">
-                                <span class="badge bg-success mb-1">Presentación Útil ✨</span>
-                                <h3 class="h6 mb-1 fw-bold">Medio Cuy Aderezado</h3>
+                                <span class="badge bg-success mb-1">Nuevo ✨</span>
+                                <h3 class="h6 mb-2 fw-bold">Medio Cuy Aderezado</h3>
                                 <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-                                <p class="text-muted small mb-2">Trozado y sazonado de casa listo para freír como Cuy Chactado o al sartén.</p>
-                                
-                                <a class="btn-tech-sheet d-inline-block mb-3" data-bs-toggle="collapse" href="#tech4" role="button">
-                                    <i class="bi bi-file-earmark-text me-1"></i> Ver Ficha de Calidad
-                                </a>
-                                <div class="collapse text-start mb-3" id="tech4">
-                                    <div class="p-2 tech-box">
-                                        <div><strong>• Macerado:</strong> Sazón artesanal express</div>
-                                        <div><strong>• Preparación:</strong> Directo al aceite o sartén</div>
-                                    </div>
-                                </div>
+                                <p class="text-muted small mb-3">Trozado y sazonado de casa listo para freír como Cuy Chactado o meter al sartén.</p>
                             </div>
                         </div>
                         <div class="p-3 pt-0 text-center">
@@ -634,32 +509,6 @@
                         <div class="fs-2 text-warning mb-2"><i class="bi bi-disc"></i></div>
                         <h4 class="h6 fw-bold">Cuy Chactado</h4>
                         <p class="small text-muted mb-0"><strong>15 a 20 min</strong> en abundante aceite muy caliente con una piedra sobre el corte.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- NUEVO BLOQUE 2: TESTIMONIOS Y RECONOCIMIENTO LOCAL -->
-    <section class="py-5 bg-organic">
-        <div class="container" style="max-width: 950px;">
-            <div class="text-center mb-4">
-                <span class="badge bg-dark text-white mb-2">Opiniones Reales</span>
-                <h2 class="h3" style="font-style: italic;">La Experiencia de Nuestros Clientes</h2>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="p-4 bg-white rounded border shadow-sm h-100" style="border-color: #e3decb !important;">
-                        <div class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-                        <p class="fst-italic text-secondary small mb-3">"El envasado al vacío marca totalmente la diferencia. La carne llega impecable a la cocina, sin malos olores ni sangre. El aderezo tradicional tiene la sazón justa."</p>
-                        <div class="fw-bold small" style="color: #8d2317;">— Familia Valenzuela (Abancay)</div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="p-4 bg-white rounded border shadow-sm h-100" style="border-color: #e3decb !important;">
-                        <div class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-                        <p class="fst-italic text-secondary small mb-3">"Pedimos el Pack Dúo para una reunión de fin de semana y quedamos encantados. Es la opción más práctica y limpia que hemos probado en la región."</p>
-                        <div class="fw-bold small" style="color: #8d2317;">— Marco A. R. (Tamburco)</div>
                     </div>
                 </div>
             </div>
@@ -821,13 +670,7 @@
                 <div class="col-md-6">
                     <div class="card shadow-sm rounded-2 bg-white p-3 border h-100" style="border-color: #e3decb !important;">
                         <div class="ratio ratio-16x9 rounded-1 overflow-hidden">
-                            <iframe 
-                                src="https://www.youtube-nocookie.com/embed/_2gS84yT2xU" 
-                                title="Nuestra Crianza Tecnificada" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                referrerpolicy="strict-origin-when-cross-origin" 
-                                allowfullscreen>
-                            </iframe>
+                            <iframe src="https://www.youtube.com/embed/5F_f3M9G6gE" allowfullscreen></iframe>
                         </div>
                         <h3 class="h5 mt-3 fw-bold">1. Nuestra Crianza Tecnificada</h3>
                         <p class="text-muted small mb-0 mt-2">Conoce cómo alimentamos y cuidamos a nuestros ejemplares en galpones limpios para garantizar una carne tierna y nutritiva.</p>
@@ -836,16 +679,10 @@
                 <div class="col-md-6">
                     <div class="card shadow-sm rounded-2 bg-white p-3 border h-100" style="border-color: #e3decb !important;">
                         <div class="ratio ratio-16x9 rounded-1 overflow-hidden">
-                            <iframe 
-                                src="https://www.youtube-nocookie.com/embed/L9wJ2W_K0m8" 
-                                title="Secretos de la Cocina Andina" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                referrerpolicy="strict-origin-when-cross-origin" 
-                                allowfullscreen>
-                            </iframe>
+                            <iframe src="https://www.youtube.com/embed/6_6vUuM1Crc" allowfullscreen></iframe>
                         </div>
-                        <h3 class="h5 mt-3 fw-bold">2. Secretos de la Cocina Andina</h3>
-                        <p class="text-muted small mb-0 mt-2">Te mostramos el proceso de dorado, preparación y trucos para lograr un crocante perfecto al cocinar cuy en casa.</p>
+                        <h3 class="h5 mt-3 fw-bold">2. Proceso de Selección y Vacío</h3>
+                        <p class="text-muted small mb-0 mt-2">Te mostramos la rigurosa limpieza, el trozado exacto y la tecnología de sellado que mantiene las propiedades intactas.</p>
                     </div>
                 </div>
             </div>
@@ -871,9 +708,9 @@
                             <h3 class="h5 fw-bold mb-2">Cuy Chactado Crujiente</h3>
                             <p class="text-muted small mb-3">Consigue ese crocante perfecto por fuera y carne jugosa por dentro. Ideal usando nuestro <i>Medio Cuy Trozado</i>.</p>
                         </div>
-                        <a href="/recetas" class="btn btn-sm btn-outline-dark w-100 fw-bold border-1 mt-2">
+                        <button class="btn btn-sm btn-outline-dark w-100 fw-bold border-1 mt-2" onclick="alert('Próximamente podrás ver los pasos completos de esta receta.')">
                             <i class="bi bi-journal-text me-1"></i> Ver Receta Paso a Paso
-                        </a>
+                        </button>
                     </div>
                 </div>
 
@@ -887,9 +724,9 @@
                             <h3 class="h5 fw-bold mb-2">Cuy al Horno Tradicional</h3>
                             <p class="text-muted small mb-3">Marinado con huacatay, ajos y panca. Te quedará tierno y dorado usando nuestro <i>Cuy Entero Aderezado</i>.</p>
                         </div>
-                        <a href="/recetas" class="btn btn-sm btn-outline-dark w-100 fw-bold border-1 mt-2">
+                        <button class="btn btn-sm btn-outline-dark w-100 fw-bold border-1 mt-2" onclick="alert('Próximamente podrás ver los pasos completos de esta receta.')">
                             <i class="bi bi-journal-text me-1"></i> Ver Receta Paso a Paso
-                        </a>
+                        </button>
                     </div>
                 </div>
 
@@ -903,9 +740,9 @@
                             <h3 class="h5 fw-bold mb-2">Pepián de Cuy</h3>
                             <p class="text-muted small mb-3">Un guiso espeso, sabroso y muy reconfortante con maíz tostado. El almuerzo dominical perfecto usando el <i>Cuy Entero Sin Aderezo</i>.</p>
                         </div>
-                        <a href="/recetas" class="btn btn-sm btn-outline-dark w-100 fw-bold border-1 mt-2">
+                        <button class="btn btn-sm btn-outline-dark w-100 fw-bold border-1 mt-2" onclick="alert('Próximamente podrás ver los pasos completos de esta receta.')">
                             <i class="bi bi-journal-text me-1"></i> Ver Receta Paso a Paso
-                        </a>
+                        </button>
                     </div>
                 </div>
 
@@ -919,9 +756,9 @@
                             <h3 class="h5 fw-bold mb-2">Sancocho / Caldo de Cuy</h3>
                             <p class="text-muted small mb-3">Sopa reconfortante y revitalizante cargada de hierro y nutrientes. Elaborada idealmente con <i>Medio Cuy Trozado</i>.</p>
                         </div>
-                        <a href="/recetas" class="btn btn-sm btn-outline-dark w-100 fw-bold border-1 mt-2">
+                        <button class="btn btn-sm btn-outline-dark w-100 fw-bold border-1 mt-2" onclick="alert('Próximamente podrás ver los pasos completos de esta receta.')">
                             <i class="bi bi-journal-text me-1"></i> Ver Receta Paso a Paso
-                        </a>
+                        </button>
                     </div>
                 </div>
 
@@ -935,9 +772,9 @@
                             <h3 class="h5 fw-bold mb-2">Cuy Frito con Papas Picantes</h3>
                             <p class="text-muted small mb-3">Presas doradas crujientes servidas sobre una cama de papas nativas con ají de huacatay y ulluco o cllinchir.</p>
                         </div>
-                        <a href="/recetas" class="btn btn-sm btn-outline-dark w-100 fw-bold border-1 mt-2">
+                        <button class="btn btn-sm btn-outline-dark w-100 fw-bold border-1 mt-2" onclick="alert('Próximamente podrás ver los pasos completos de esta receta.')">
                             <i class="bi bi-journal-text me-1"></i> Ver Receta Paso a Paso
-                        </a>
+                        </button>
                     </div>
                 </div>
 
@@ -951,9 +788,9 @@
                             <h3 class="h5 fw-bold mb-2">Seco de Cuy al Culantro</h3>
                             <p class="text-muted small mb-3">Guiso aromático con aderezo espeso de culantro, chicha de jora y yucas tiernas. Perfecto con <i>Cuy Entero Sin Aderezo</i>.</p>
                         </div>
-                        <a href="/recetas" class="btn btn-sm btn-outline-dark w-100 fw-bold border-1 mt-2">
+                        <button class="btn btn-sm btn-outline-dark w-100 fw-bold border-1 mt-2" onclick="alert('Próximamente podrás ver los pasos completos de esta receta.')">
                             <i class="bi bi-journal-text me-1"></i> Ver Receta Paso a Paso
-                        </a>
+                        </button>
                     </div>
                 </div>
 
@@ -1061,7 +898,7 @@
                         <li><a href="#nutricion" style="color: #dcd7cc; text-decoration:none;">Nutrición</a></li>
                         <li><a href="#catalogo" style="color: #dcd7cc; text-decoration:none;">Productos</a></li>
                         <li><a href="#combos" style="color: #dcd7cc; text-decoration:none;">Packs</a></li>
-                        <li><a href="/recetas" style="color: #dcd7cc; text-decoration:none;">Recetas</a></li>
+                        <li><a href="#recetas" style="color: #dcd7cc; text-decoration:none;">Recetas</a></li>
                         <li><a href="/faqs" style="color: #dcd7cc; text-decoration:none;">Preguntas</a></li>
                         <li><a href="/contacto" style="color: #dcd7cc; text-decoration:none;">Contacto</a></li>
                     </ul>

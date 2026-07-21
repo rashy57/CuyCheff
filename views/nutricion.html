@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/logo.png">
+    
+    <title>Valor Nutritivo & Propiedades | CuyCheff Abancay</title>
+    <meta name="description" content="Conoce las propiedades nutricionales de la carne de cuy CuyCheff. Alto contenido proteico (20.3%), rico en hierro, calcio y bajo en grasas. Datos oficiales del INS.">
+
+    <!-- Fuentes Estilo Vintage -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap y CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <style>
+        body { font-family: 'Lora', serif; background-color: #faf8f5; color: #3d3530; }
+        h1, h2, h3, h4, h5, h6, .navbar-brand { font-family: 'Playfair Display', serif; font-weight: 700; color: #2b211b; }
+        .top-banner { background-color: #4a6141; color: #fbf9f3; font-size: 0.85rem; }
+        .navbar-custom { background-color: #8d2317 !important; border-bottom: 2px solid #701a10; }
+        .navbar-custom .navbar-brand { color: #fbf9f3 !important; font-size: 1.8rem; font-style: italic; display: flex; align-items: center; gap: 10px; }
+        .brand-logo-img { width: 46px; height: 46px; object-fit: cover; border-radius: 50%; border: 2px solid rgba(251, 249, 243, 0.8); background: #fff; }
+        .navbar-custom .nav-link { color: #fbf9f3 !important; font-weight: 500; padding: 6px 14px !important; margin: 3px 4px; border: 1px solid rgba(251, 249, 243, 0.35); border-radius: 3px; display: inline-block; }
+        .navbar-custom .nav-link:hover, .navbar-custom .nav-link.active { color: #8d2317 !important; background-color: #fbf9f3 !important; }
+        .bg-organic { background-color: #f2ebd9 !important; border-top: 1px solid #dfd7be; border-bottom: 1px solid #dfd7be; }
+        .social-links a { color: #dcd7cc; font-size: 1.25rem; }
+        .social-links a:hover { color: #fbf9f3; }
+        .nutri-card { background: #ffffff; border: 1px solid #e3decb; border-radius: 6px; padding: 20px; transition: transform 0.2s; }
+        .nutri-card:hover { transform: translateY(-3px); }
+        .table-custom { background: #ffffff; border: 1px solid #e3decb; }
+        .table-custom th { background-color: #4a6141; color: #ffffff; font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body>
+
+    <!-- BANNER SUPERIOR -->
+    <div class="top-banner py-2 text-center fw-bold border-bottom border-dark border-opacity-10">
+        <div class="container">
+            <span>🚚 Envíos diarios en Abancay y Tamburco | 📦 Salidas programadas a provincias de Apurímac</span>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm sticky-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="/img/logo.png" alt="Logo CuyCheff" class="brand-logo-img" onerror="this.src='https://placehold.co/100x100?text=CuyCheff'">
+                <span>CuyCheff</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="crianza.html">Nuestra Crianza</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nutricion.html">Nutrición</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#combos">Packs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recetas.html">Recetas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#carrito-seccion">🛒 Mi Carrito</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faqs.html">Preguntas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CABECERA -->
+    <section class="py-5 bg-organic text-center">
+        <div class="container">
+            <span class="badge text-uppercase px-3 py-2 text-white mb-2" style="background-color: #8d2317;">Superalimento Andino</span>
+            <h1 class="display-5 fw-bold" style="font-style: italic;">Propiedades Nutricionales</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 750px;">
+                Descubre por qué la carne de cuy es considerada uno de los alimentos más saludables, altamente digeribles y ricos en proteínas de la gastronomía peruana.
+            </p>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHTS NUTRICIONALES -->
+    <section class="py-5 bg-white border-bottom">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="nutri-card h-100 shadow-sm border-top border-4 border-success">
+                        <span class="display-5 fw-bold text-success d-block" style="font-family: 'Playfair Display', serif;">20.3%</span>
+                        <strong class="h6 d-block mt-2 mb-1">Proteína de Alto Valor</strong>
+                        <p class="text-muted small mb-0">Contiene todos los aminoácidos esenciales necesarios para la regeneración celular.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="nutri-card h-100 shadow-sm border-top border-4 border-danger">
+                        <span class="display-5 fw-bold text-danger d-block" style="font-family: 'Playfair Display', serif;">1.9 mg</span>
+                        <strong class="h6 d-block mt-2 mb-1">Hierro Hemínico</strong>
+                        <p class="text-muted small mb-0">De rápida absorción, ideal para combatir y prevenir la anemia infantil y en adultos.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="nutri-card h-100 shadow-sm border-top border-4 border-warning">
+                        <span class="display-5 fw-bold text-warning d-block" style="font-family: 'Playfair Display', serif;">1.6%</span>
+                        <strong class="h6 d-block mt-2 mb-1">Baja en Grasas</strong>
+                        <p class="text-muted small mb-0">Carne magra por excelencia con mínimo porcentaje de lípidos saturados.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="nutri-card h-100 shadow-sm border-top border-4 border-info">
+                        <span class="display-5 fw-bold text-info d-block" style="font-family: 'Playfair Display', serif;">96 kcal</span>
+                        <strong class="h6 d-block mt-2 mb-1">Aporte Calórico Saludable</strong>
+                        <p class="text-muted small mb-0">Energía limpia ideal para dietas balanceadas, deportistas y adultos mayores.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TABLA COMPARATIVA DETALLADA -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="h3 fw-bold" style="font-style: italic;">Tabla Comparativa Nutricional (por 100g de carne)</h2>
+                <p class="text-muted small">Valores sustentados por la Tabla Peruana de Composición de Alimentos del Instituto Nacional de Salud (INS).</p>
+            </div>
+
+            <div class="table-responsive max-width-lg mx-auto shadow-sm rounded">
+                <table class="table table-bordered table-custom align-middle mb-0 text-center">
+                    <thead>
+                        <tr>
+                            <th class="text-start ps-4">Tipo de Carne</th>
+                            <th>Proteínas (%)</th>
+                            <th>Grasa (%)</th>
+                            <th>Minerales / Hierro</th>
+                            <th>Energía (kcal)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-success fw-bold">
+                            <td class="text-start ps-4"><i class="bi bi-star-fill text-warning me-2"></i>Carne de Cuy (CuyCheff)</td>
+                            <td>20.3%</td>
+                            <td>1.6%</td>
+                            <td>1.9 mg</td>
+                            <td>96 kcal</td>
+                        </tr>
+                        <tr>
+                            <td class="text-start ps-4">Carne de Pollo / Aves</td>
+                            <td>18.3%</td>
+                            <td>9.3%</td>
+                            <td>1.5 mg</td>
+                            <td>170 kcal</td>
+                        </tr>
+                        <tr>
+                            <td class="text-start ps-4">Carne Vacuna (Res)</td>
+                            <td>17.5%</td>
+                            <td>21.8%</td>
+                            <td>1.4 mg</td>
+                            <td>240 kcal</td>
+                        </tr>
+                        <tr>
+                            <td class="text-start ps-4">Carne de Cerdo</td>
+                            <td>14.5%</td>
+                            <td>37.3%</td>
+                            <td>0.9 mg</td>
+                            <td>376 kcal</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- BENEFICIO COMPLEMENTARIO -->
+            <div class="p-4 bg-organic rounded border mt-5" style="border-color: #dfd7be !important;">
+                <div class="row align-items-center g-3">
+                    <div class="col-md-8">
+                        <h3 class="h5 fw-bold mb-1" style="color: #2b211b;">💡 Propiedad Reconstituyente Proteica</h3>
+                        <p class="text-secondary small mb-0">
+                            Gracias a la presencia de enzimas digestivas naturales y ácidos grasos esenciales como el Omega 3 y 6, la carne de cuy fortalece el sistema inmunológico y apoya en procesos de recuperación médica.
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-md-end">
+                        <a href="productos.html" class="btn text-white fw-bold px-4 py-2" style="background-color: #8d2317; border-radius: 4px;">Ordenar Carne Fresca</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer py-5" style="background-color: #2b211b; color: #fbf9f3; border-top: 3px solid #8d2317;">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h3 class="h4 mb-3" style="color: #fbf9f3; font-style: italic;">CuyCheff</h3>
+                    <p class="small text-muted mb-3" style="color: #dcd7cc !important;">Tradición y calidad en carne de cuy envasada al vacío desde Abancay, Apurímac.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://tiktok.com" target="_blank"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://wa.me/51969914021" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-md-center">
+                    <h3 class="h5 mb-3" style="color: #fbf9f3;">Navegación Rápida</h3>
+                    <ul class="list-unstyled small d-flex flex-column gap-1">
+                        <li><a href="index.html" style="color: #dcd7cc; text-decoration:none;">Inicio</a></li>
+                        <li><a href="crianza.html" style="color: #dcd7cc; text-decoration:none;">Nuestra Crianza</a></li>
+                        <li><a href="productos.html" style="color: #dcd7cc; text-decoration:none;">Ver Productos</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <h3 class="h5 mb-3" style="color: #fbf9f3;">Pedidos Directos</h3>
+                    <p class="small text-muted mb-2" style="color: #dcd7cc !important;">📲 WhatsApp: 969 914 021</p>
+                    <p class="small text-muted" style="color: #dcd7cc !important;">📍 Abancay, Apurímac - Perú</p>
+                </div>
+            </div>
+            <div class="text-center mt-4 pt-3 border-top" style="border-top-color: rgba(251,249,243,0.08) !important;">
+                <p class="small text-muted mb-0">&copy; 2026 CuyCheff - Abancay. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

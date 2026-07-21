@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuy Aderezado | CuyChef Abancay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="logo">
+                <span>🐹</span> CuyChef
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="/">Inicio</a>
+                <a href="/crianza">Nuestra Crianza</a>
+                <a href="/nutricion">Nutrición</a>
+                <a href="/productos">Productos</a>
+                <a href="/recetas">Recetas</a>
+                <a href="/contacto">Contacto</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="/carrito-seccion" class="cart-btn">🛒 Carrito (<span class="cart-count" id="contador-carrito">0</span>)</a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24" fill="currentColor">
+                        <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM416 448H32c17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO DEL PRODUCTO ADEREZADO -->
+    <main style="padding: 100px 20px; text-align: center;">
+        <section id="aderezado-detalle">
+            <h1>Cuy Entero Aderezado</h1>
+            <img src="/img/cuy-aderezado.png" alt="Cuy Aderezado" style="max-width: 400px; border-radius: 15px; margin: 20px 0;">
+            <p style="max-width: 600px; margin: 0 auto; color: #555;">
+                Marinado con una receta especial de ajíes, chicha de jora y especias. 
+                Listo para meter directo al horno o caja china. ¡El sabor tradicional sin complicaciones!
+            </p>
+            <div style="margin-top: 30px; font-size: 24px; font-weight: bold; color: #1b815a;">S/ 49.00</div>
+            <button class="btn-primary" style="margin-top: 20px;">Agregar al carrito</button>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>🐹 CuyChef</h3>
+                <p>La mejor experiencia gastronómica desde Apurímac.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/crianza">Nuestra Crianza</a></li>
+                    <li><a href="/nutricion">Nutrición</a></li>
+                    <li><a href="/productos">Productos</a></li>
+                    <li><a href="/recetas">Recetas</a></li>
+                    <li><a href="/contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CuyChef - Abancay.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        menuToggle.addEventListener('click', () => { navMenu.classList.toggle('active'); });
+    </script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="/img/logo.png">
+    <title>Preguntas Frecuentes | CuyCheff Abancay</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background-color: #faf8f5; 
+            color: #3d3530; 
+        }
+
+        h1, h2, h3, h4, .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: #2b211b; 
+        }
+
+        .top-banner {
+            background-color: #4a6141;
+            color: #fbf9f3;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+
+        .navbar-custom { 
+            background-color: #8d2317 !important; 
+            border-bottom: 2px solid #701a10;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+        
+        .navbar-custom .navbar-brand { 
+            color: #fbf9f3 !important; 
+            font-weight: 700; 
+            font-size: 1.8rem;
+            font-style: italic;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .brand-logo-img {
+            width: 46px;
+            height: 46px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid rgba(251, 249, 243, 0.8);
+            background-color: #ffffff;
+        }
+
+        .navbar-custom .nav-link { 
+            color: #fbf9f3 !important; 
+            font-weight: 500;
+            font-size: 1.05rem; 
+            padding: 6px 14px !important; 
+            margin: 3px 4px; 
+            border: 1px solid rgba(251, 249, 243, 0.35); 
+            border-radius: 3px; 
+            display: inline-block;
+        }
+
+        .navbar-custom .nav-link:hover, .navbar-custom .nav-link.active { 
+            color: #8d2317 !important; 
+            background-color: #fbf9f3 !important; 
+            border-color: #fbf9f3 !important;
+        }
+
+        /* ESTILOS DE ACORDEÓN PERSONALIZADO */
+        .accordion-button:not(.collapsed) {
+            color: #8d2317;
+            background-color: #f2ebd9;
+            box-shadow: none;
+        }
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: rgba(141, 35, 23, 0.25);
+        }
+        .accordion-item {
+            border: 1px solid #e3decb;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- BANNER SUPERIOR -->
+    <div class="top-banner py-2 text-center fw-bold border-bottom border-dark border-opacity-10">
+        <div class="container">
+            <span>🚚 Envíos diarios en Abancay y Tamburco | 📦 Salidas programadas a provincias de Apurímac</span>
+        </div>
+    </div>
+
+    <!-- NAVEGACIÓN DE SUBPÁGINA -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm sticky-top">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                <img src="/img/logo.png" alt="Logo CuyCheff" class="brand-logo-img" onerror="this.src='https://placehold.co/100x100?text=CuyCheff'">
+                <span>CuyCheff</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/crianza">Nuestra Crianza</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#nutricion">Nutrición</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#catalogo">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#combos">Packs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#recetas">Recetas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#carrito-seccion">🛒 Mi Carrito</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/faqs">Preguntas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CABECERA -->
+    <section class="py-5 bg-white border-bottom">
+        <div class="container text-center" style="max-width: 800px;">
+            <span class="badge px-3 py-2 text-white mb-2" style="background-color: #4a6141;">Atención al Cliente</span>
+            <h1 class="display-5 mb-3" style="font-style: italic;">Preguntas Frecuentes</h1>
+            <p class="lead text-muted">Resolvemos tus dudas sobre nuestros procesos de crianza, envíos, métodos de conservación y formas de pago.</p>
+        </div>
+    </section>
+
+    <!-- PREGUNTAS EN ACORDEÓN -->
+    <section class="py-5">
+        <div class="container" style="max-width: 850px;">
+            <div class="accordion shadow-sm rounded-3 overflow-hidden" id="accordionFaqs">
+                
+                <!-- FAQ 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            <i class="bi bi-box-seam text-danger me-2"></i> ¿Cuánto tiempo dura el cuy envasado al vacío?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFaqs">
+                        <div class="accordion-body text-secondary">
+                            En refrigeración normal (0°C a 4°C) se conserva fresco hasta por <strong>7 a 10 días</strong>. Si lo mantienes congelado (-18°C), conserva intacto su sabor, textura y nutrientes por más de <strong>3 meses</strong> sin sufrir quemaduras por frío.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            <i class="bi bi-truck text-success me-2"></i> ¿Cómo realizan los envíos y cuáles son las coberturas?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFaqs">
+                        <div class="accordion-body text-secondary">
+                            Realizamos entregas diarias con servicio delivery directo en todo <strong>Abancay y Tamburco</strong>. Para distritos o provincias cercanas dentro de Apurímac (como Curahuasi, Andahuaylas, etc.), despachamos mediante salidas programadas con embalaje térmico especial.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            <i class="bi bi-basket text-warning me-2"></i> ¿El producto viene listo para cocinar o requiere limpieza adicional?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFaqs">
+                        <div class="accordion-body text-secondary">
+                            Viene <strong>100% eviscerado, limpio y sin impurezas</strong>. Tanto en la presentación sin aderezo como en la aderezada, solo necesitas abrir el empaque sellado y colocarlo directo a la olla, sartén o sartén para horno.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                            <i class="bi bi-wallet2 text-primary me-2"></i> ¿Cuáles son los medios de pago disponibles?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFaqs">
+                        <div class="accordion-body text-secondary">
+                            Aceptamos pagos digitales mediante <strong>Yape y Plin</strong>, transferencias bancarias directas a cuentas BCP o BBVA, y pago en <strong>efectivo contraentrega</strong> al momento de recibir el producto en tu domicilio.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                            <i class="bi bi-egg-fried text-danger me-2"></i> ¿Qué ingredientes contiene el aderezo tradicional?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFaqs">
+                        <div class="accordion-body text-secondary">
+                            Nuestra receta tradicional utiliza insumos naturales seleccionados: ají panca, ajo, huacatay fresco, un toque de chicha de jora, comino y sal de mar. Es un marinado equilibrado pensado para realzar el sabor natural sin ser hostigante.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- BLOQUE DE CONTACTO -->
+            <div class="mt-5 p-4 bg-white border rounded-3 text-center shadow-sm" style="border-color: #e3decb !important;">
+                <h3 class="h5 fw-bold mb-2">¿Tienes alguna otra consulta?</h3>
+                <p class="text-muted small mb-3">Escríbenos directamente a nuestro canal de WhatsApp y te atenderemos al instante.</p>
+                <a href="https://wa.me/51969914021?text=Hola%20CuyCheff,%20tengo%20una%20consulta" target="_blank" class="btn btn-success fw-bold px-4 py-2">
+                    <i class="bi bi-whatsapp me-2"></i> Consultar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer py-4" style="background-color: #2b211b; color: #fbf9f3; border-top: 3px solid #8d2317;">
+        <div class="container text-center">
+            <p class="small mb-0">&copy; 2026 CuyCheff - Abancay. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
